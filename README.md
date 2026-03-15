@@ -14,6 +14,8 @@ SSH
 |
 Amazon EC2 Instance
 
+<img src="./Infra EC2.png" alt="Infraestructura AWS" width="600">
+
 ## AWS Services Used
 
 * Amazon EC2
