@@ -39,6 +39,14 @@ Before starting this project you need:
 4. Connect using SSH
 5. Run basic Linux commands
 
+## Implementation Steps
+
+### Step 1 – Launch EC2 Instance
+
+1. Go to the AWS console and open the EC2 service.
+
+
+
 ## Connect to the Server
 
 Example connection command:
