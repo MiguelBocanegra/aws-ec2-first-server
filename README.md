@@ -41,9 +41,40 @@ Before starting this project you need:
 
 ## Implementation Steps
 
-### Step 1 – Launch EC2 Instance
+## Implementation Steps
 
-1. Go to the AWS console and open the EC2 service.
+1. Log in to the AWS Management Console and navigate to the EC2 service.
+
+2. Click the **Launch Instance** button to start creating a new instance.
+
+3. In the **Name** field, enter a name for the server.
+
+4. Select the required **Operating System (AMI)** for the instance.
+
+5. Choose the **Instance Type** according to the project requirements.
+
+6. In the **Key Pair** section, you can either select an existing key pair or create a new one.  
+   In this case, a new key pair is created.
+
+7. Provide a name for the key pair and choose the key pair type and format.  
+   - If you plan to connect from a Linux or macOS machine, select the **.pem** format.  
+   - If you plan to connect using **PuTTY** on Windows, select the **.ppk** format.
+
+8. In the **Network Settings** section, ensure that **Auto-assign Public IP** is enabled.  
+   Create a **Security Group** that allows inbound traffic on **port 22 (SSH)**.
+
+9. Click **Launch Instance** to create the EC2 instance.
+
+10. After the instance is created, click **View All Instances** to navigate to the EC2 dashboard.
+
+11. Wait until the **Status Check** shows that all system checks have passed.  
+    Once the checks are completed, the instance will be ready to connect.
+
+12. To connect to the server, copy the **Public IP Address** of the instance.
+
+13. Open a terminal and run the following command: ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name This command will allow you to connect to the EC2 instance via SSH.
+
+14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
 
 
 
