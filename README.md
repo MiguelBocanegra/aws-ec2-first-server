@@ -43,40 +43,39 @@ Before starting this project you need:
 ## Implementation Steps
 
 1. Log in to the AWS Management Console and navigate to the EC2 service
-
-<img src="./Step 1" alt="Infraestructura AWS" width="600">
-
-4. Click the **Launch Instance** button to start creating a new instance.
-
-5. In the **Name** field, enter a name for the server.
-
-6. Select the required **Operating System (AMI)** for the instance.
-
-7. Choose the **Instance Type** according to the project requirements.
-
-8. In the **Key Pair** section, you can either select an existing key pair or create a new one.  
+<img src="./ec2-images/step1.png" width="600">
+2. Click the **Launch Instance** button to start creating a new instance.
+<img src="./ec2-images/step2.png" width="600">
+3. In the **Name** field, enter a name for the server.
+<img src="./ec2-images/step3.png" width="600">
+4. Select the required **Operating System (AMI)** for the instance.
+<img src="./ec2-images/step4.png" width="600">
+5. Choose the **Instance Type** according to the project requirements.
+<img src="./ec2-images/step5.png" width="600">
+6. In the **Key Pair** section, you can either select an existing key pair or create a new one.  
    In this case, a new key pair is created.
-
-9. Provide a name for the key pair and choose the key pair type and format.  
+<img src="./ec2-images/step6.png" width="600">
+7. Provide a name for the key pair and choose the key pair type and format.  
    - If you plan to connect from a Linux or macOS machine, select the **.pem** format.  
    - If you plan to connect using **PuTTY** on Windows, select the **.ppk** format.
-
-10. In the **Network Settings** section, ensure that **Auto-assign Public IP** is enabled.  
+<img src="./ec2-images/step7.png" width="600">
+8. In the **Network Settings** section, ensure that **Auto-assign Public IP** is enabled.  
    Create a **Security Group** that allows inbound traffic on **port 22 (SSH)**.
-
-11. Click **Launch Instance** to create the EC2 instance.
-
-12. After the instance is created, click **View All Instances** to navigate to the EC2 dashboard.
-
-13. Wait until the **Status Check** shows that all system checks have passed.  
+<img src="./ec2-images/step8.png" width="600">
+9. Click **Launch Instance** to create the EC2 instance.
+<img src="./ec2-images/step9.png" width="600">
+10. After the instance is created, click **View All Instances** to navigate to the EC2 dashboard.
+<img src="./ec2-images/step10-1.png" width="600">
+<img src="./ec2-images/step10-2.png" width="600">
+11. Wait until the **Status Check** shows that all system checks have passed.  
     Once the checks are completed, the instance will be ready to connect.
-
-14. To connect to the server, copy the **Public IP Address** of the instance.
-
-15. Open a terminal and run the following command: ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name This command will allow you to connect to the EC2 instance via SSH.
-
-16. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
-
+<img src="./ec2-images/step11.png" width="600">
+12. To connect to the server, copy the **Public IP Address** of the instance.
+<img src="./ec2-images/step12.png" width="600">
+13. Open a terminal and run the following command: ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name This command will allow you to connect to the EC2 instance via SSH.
+<img src="./ec2-images/step13.png" width="600">
+14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
+<img src="./ec2-images/step14.png" width="600">
 
 
 ## Connect to the Server
