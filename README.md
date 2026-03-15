@@ -14,8 +14,7 @@ SSH
 |
 Amazon EC2 Instance
 
-![aws-ec2-first-server](EC2 imagenes"/Infra EC2.png)
-<img src="./Infra EC2.png" alt="Infraestructura AWS" width="600">
+<img src="./ec2-images/infra.png" width="600">
 
 ## AWS Services Used
 
