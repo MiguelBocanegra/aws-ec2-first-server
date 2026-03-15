@@ -39,7 +39,6 @@ Before starting this project you need:
 4. Connect using SSH
 5. Run basic Linux commands
 
-## Implementation Steps
 
 ## Implementation Steps
 
