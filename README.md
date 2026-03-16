@@ -1,6 +1,13 @@
 # AWS EC2 First Server
 
-## Project Description
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![EC2](https://img.shields.io/badge/Amazon-EC2-red)
+![Linux](https://img.shields.io/badge/Linux-Server-yellow)
+![SSH](https://img.shields.io/badge/Access-SSH-blue)
+![Project](https://img.shields.io/badge/Project-Cloud%20Infrastructure-green)
+
+
+## Project Overview
 
 This project demonstrates how to create and connect to a Linux server using Amazon EC2 in AWS.
 
@@ -8,19 +15,22 @@ The goal of this project is to understand the fundamentals of cloud infrastructu
 
 ## Architecture
 
-Local Computer
-|
-SSH
-|
-Amazon EC2 Instance
+User Computer  
+↓  
+SSH Connection  
+↓  
+EC2 Instance (Amazon Linux)
 
 <img src="./ec2-images/infra.png" width="600">
 
-## AWS Services Used
+## Technologies Used
 
-* Amazon EC2
-* AWS Security Groups
-* Key Pair Authentication
+| Technology | Purpose |
+|------------|--------|
+| Amazon EC2 | Virtual server hosting |
+| Security Groups | Network firewall |
+| SSH | Secure remote access |
+| Amazon Linux | Server operating system |
 
 ## Prerequisites
 
@@ -77,12 +87,47 @@ Before starting this project you need:
 14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
 <img src="./ec2-images/step14.png" width="600">
 
+## Core commands
 
 ## Connect to the Server
 
-Example connection command:
-
+```bash
 ssh -i mykey.pem ec2-user@YOUR_PUBLIC_IP
+
+## Operating system update
+
+```bash
+sudo yum update -y
+
+## Project Structure
+
+aws-ec2-first-server
+│
+├── README.md
+└── ec2-images
+    ├── infra.png
+    ├── step1.png
+    ├── step2.png
+    ├── step3.png
+    ├── step4.png
+    ├── step5.png
+    ├── step6.png
+    ├── step7.png
+    ├── step8.png
+    ├── step9.png
+    ├── step10.png
+    ├── step11.png
+    ├── step12.png
+    ├── step13.png
+    └── step14.png
+
+## Skills Demonstrated
+
+- AWS EC2 provisioning
+- Security Group configuration
+- SSH authentication
+- Linux server administration
+- Cloud infrastructure fundamentals
 
 ## What I Learned
 
@@ -96,6 +141,29 @@ ssh -i mykey.pem ec2-user@YOUR_PUBLIC_IP
 * Install a web server (Nginx or Apache)
 * Automate instance creation using AWS CLI
 * Add monitoring with CloudWatch
+
+## Project Structure
+
+aws-ec2-first-server
+│
+├── README.md
+└── ec2-images
+    ├── infra.png
+    ├── step1.png
+    ├── step2.png
+    ├── step3.png
+    ├── step4.png
+    ├── step5.png
+    ├── step6.png
+    ├── step7.png
+    ├── step8.png
+    ├── step9.png
+    ├── step10.png
+    ├── step11.png
+    ├── step12.png
+    ├── step13.png
+    └── step14.png
+
 
 ## Author
 
