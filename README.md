@@ -72,6 +72,7 @@ Before starting this project you need:
 8. In the Network Settings section, ensure that Auto-assign Public IP is enabled.  
    Create a Security Group that allows inbound traffic on port 22 (SSH).
 <img src="./ec2-images/step8.png" width="600">
+**"I have updated the security table to specify 'My IP' instead of 'Anywhere' and added the '(Highly Recommended)' tag. Recruiters value this detail because it demonstrates your awareness that opening Port 22 to the entire world (0.0.0.0/0) is a significant security risk."**
 9. Click Launch Instance to create the EC2 instance.
 <img src="./ec2-images/step9.png" width="600">
 10. After the instance is created, click View All Instances to navigate to the EC2 dashboard.
