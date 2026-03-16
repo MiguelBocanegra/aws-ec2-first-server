@@ -89,6 +89,11 @@ ssh -i /path/key-pair-name.pem ec2-user@instance-public-dns-name
 ```
 This command will allow you to connect to the EC2 instance via SSH.
 
+## Important: Security Note
+Before connecting via SSH, ensure your private key file has the correct restrictive permissions. Linux and macOS users must run the following command, otherwise, the connection will be rejected for being "too open":
+```bash
+chmod 400 your-key-name.pem
+```
 <img src="./ec2-images/step13.png" width="600">
 
 14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
