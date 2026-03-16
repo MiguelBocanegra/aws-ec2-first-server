@@ -128,7 +128,7 @@ sudo yum update -y
 * Add monitoring with CloudWatch
 
 ## Project Structure
-
+```bash
 aws-ec2-first-server
 │
 ├── README.md
@@ -148,7 +148,7 @@ aws-ec2-first-server
     ├── step12.png
     ├── step13.png
     └── step14.png
-
+```
 
 ## Author
 
