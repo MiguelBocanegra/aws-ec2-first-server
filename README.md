@@ -82,7 +82,12 @@ Before starting this project you need:
 <img src="./ec2-images/step11.png" width="600">
 12. To connect to the server, copy the Public IP Address of the instance.
 <img src="./ec2-images/step12.png" width="600">
-13. Open a terminal and run the following command: ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name This command will allow you to connect to the EC2 instance via SSH.
+13. Open a terminal and run the following command:
+    
+```bash
+ssh -i /path/key-pair-name.pem ec2-user@instance-public-dns-name
+
+This command will allow you to connect to the EC2 instance via SSH.
 <img src="./ec2-images/step13.png" width="600">
 14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
 <img src="./ec2-images/step14.png" width="600">
@@ -98,28 +103,6 @@ ssh -i mykey.pem ec2-user@YOUR_PUBLIC_IP
 
 ```bash
 sudo yum update -y
-
-## Project Structure
-
-aws-ec2-first-server
-│
-├── README.md
-└── ec2-images
-    ├── infra.png
-    ├── step1.png
-    ├── step2.png
-    ├── step3.png
-    ├── step4.png
-    ├── step5.png
-    ├── step6.png
-    ├── step7.png
-    ├── step8.png
-    ├── step9.png
-    ├── step10.png
-    ├── step11.png
-    ├── step12.png
-    ├── step13.png
-    └── step14.png
 
 ## Skills Demonstrated
 
