@@ -11,7 +11,7 @@ Before connecting, the private key file must have restrictive permissions to be 
 # Set read-only permissions for the owner (required for SSH)
 chmod 400 /path/to/your-key-pair.pem
 ```
-2. Remote Connection
+## 2. Remote Connection
 Establish a secure shell session with the Amazon Linux instance using the default user.
 ```bash
 # Connect to the instance using the identity file (.pem)
