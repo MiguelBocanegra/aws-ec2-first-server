@@ -103,7 +103,7 @@ ssh -i mykey.pem ec2-user@YOUR_PUBLIC_IP
 
 ```bash
 sudo yum update -y
-
+---
 ## Skills Demonstrated
 
 - AWS EC2 provisioning
