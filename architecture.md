@@ -1,20 +1,18 @@
-Architecture
+## Architecture
 
-This project uses a simple cloud architecture:
+User Computer  
+↓  
+SSH Connection  
+↓  
+EC2 Instance (Amazon Linux)
 
-User Computer
-|
-SSH Connection
-|
-Amazon EC2 Instance (Linux Server)
+<img src="./ec2-images/infra.png" width="600">
 
-Components:
+## Technologies Used
 
-User Computer
-Used to connect to the server via SSH.
-
-Security Group
-Allows inbound SSH traffic (port 22).
-
-EC2 Instance
-Virtual Linux server running in AWS.
+| Technology | Purpose |
+|------------|--------|
+| Amazon EC2 | Virtual server hosting |
+| Security Groups | Network firewall |
+| SSH | Secure remote access |
+| Amazon Linux | Server operating system |
