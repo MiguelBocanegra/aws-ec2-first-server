@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+
 # AWS EC2 First Server
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
