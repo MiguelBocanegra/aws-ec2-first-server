@@ -88,7 +88,9 @@ Before starting this project you need:
 ssh -i /path/key-pair-name.pem ec2-user@instance-public-dns-name
 ```
 This command will allow you to connect to the EC2 instance via SSH.
+
 <img src="./ec2-images/step13.png" width="600">
+
 14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
 <img src="./ec2-images/step14.png" width="600">
 
