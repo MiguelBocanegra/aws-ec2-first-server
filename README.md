@@ -86,7 +86,7 @@ Before starting this project you need:
     
 ```bash
 ssh -i /path/key-pair-name.pem ec2-user@instance-public-dns-name
-
+```
 This command will allow you to connect to the EC2 instance via SSH.
 <img src="./ec2-images/step13.png" width="600">
 14. Once connected to the server, you can test the connection by updating the system packages:sudo yum update -y
@@ -98,12 +98,12 @@ This command will allow you to connect to the EC2 instance via SSH.
 
 ```bash
 ssh -i mykey.pem ec2-user@YOUR_PUBLIC_IP
-
+```
 ## Operating system update
 
 ```bash
 sudo yum update -y
----
+```
 ## Skills Demonstrated
 
 - AWS EC2 provisioning
